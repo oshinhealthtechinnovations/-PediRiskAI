@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase I: Research Foundation | PediRisk AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <div class="logo-text">
+                    <span class="company-name">OSHIN HEALTHTECH</span>
+                    <span class="sub-name">INNOVATIONS PVT. LTD.</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
+                <a href="team.html" class="nav-link"><i class="fa-solid fa-users"></i> Our Team</a>
+                <a href="index.html#founders" class="nav-link"><i class="fa-solid fa-user-tie"></i> Leadership</a>
+                <a href="index.html#phases-hub" class="nav-link active"><i class="fa-solid fa-sitemap"></i> Project Phases</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#phases-hub" class="btn btn-secondary"><i class="fa-solid fa-grid-2"></i> All Phases Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="phase-page-header">
+            <div class="container">
+                <div class="breadcrumb-nav">
+                    <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+                    <span>Phase I Roadmap</span>
+                </div>
+                <span class="phase-title-badge">Phase I Roadmap</span>
+                <h1 class="section-title">Phase I – Research Foundation</h1>
+                <p class="section-description">
+                    Establishing the epidemiological background, clinical literature taxonomy, risk variable taxonomy, and initial screening questionnaires for pediatric Type 2 Diabetes.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mind Map Section -->
+        <section class="section-padding">
+            <div class="container-wide">
+                <div class="toolbar-light">
+                    <div class="toolbar-search-light">
+                        <i class="fa-solid fa-magnifying-glass search-icon-light"></i>
+                        <input type="text" id="phaseSearch" placeholder="Search Phase I nodes (e.g. Demographics, Literature, Pilot...)" aria-label="Search Phase I nodes">
+                    </div>
+                    <div class="toolbar-actions-light">
+                        <button class="btn-ctrl-light" id="btnExpandAll"><i class="fa-solid fa-square-plus"></i> Expand All</button>
+                        <button class="btn-ctrl-light" id="btnCollapseAll"><i class="fa-solid fa-square-minus"></i> Collapse All</button>
+                    </div>
+                </div>
+
+                <div class="mindmap-viewport-light">
+                    <div class="mindmap-canvas-light" id="mindmapCanvas"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Plan Section -->
+        <section class="plan-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">EXECUTION BLUEPRINT</span>
+                    <h2 class="section-title">Phase I Implementation Plan</h2>
+                    <p class="section-description">A structured step-by-step roadmap to execute Phase I deliverables effectively.</p>
+                </div>
+
+                <div class="plan-grid">
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h3>1. Problem & Gap Analysis</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Collect regional and global epidemiological data on rising childhood obesity and T2D.</li>
+                            <li><i class="fa-solid fa-check"></i> Identify diagnostic bottlenecks in traditional clinical blood testing.</li>
+                            <li><i class="fa-solid fa-check"></i> Establish clear cost-benefit metrics for digital pre-screening tools.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-book"></i></div>
+                            <h3>2. Systematic Literature Review</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Audit ADA, ISPAD, and Indian Academy of Pediatrics (IAP) clinical guidelines.</li>
+                            <li><i class="fa-solid fa-check"></i> Synthesize existing pediatric risk score calculators and AI screening papers.</li>
+                            <li><i class="fa-solid fa-check"></i> Document missing research gaps in non-invasive early detection.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-list-check"></i></div>
+                            <h3>3. Clinical Variable Taxonomy</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Catalog demographic indicators (Age, Sex, Ethnicity, Socioeconomic status).</li>
+                            <li><i class="fa-solid fa-check"></i> Select anthropometric indicators (BMI percentile, Waist-to-Height ratio).</li>
+                            <li><i class="fa-solid fa-check"></i> Define lifestyle parameters (Dietary patterns, Physical activity, Screen time).</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-file-pen"></i></div>
+                            <h3>4. Questionnaire V1 Drafting</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Draft Parent Version for household lifestyle & family history.</li>
+                            <li><i class="fa-solid fa-check"></i> Draft School Version for mass checkups and physical education records.</li>
+                            <li><i class="fa-solid fa-check"></i> Draft Doctor Version for clinical triage and physical signs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Node Modal Drawer -->
+    <div class="node-modal-backdrop-light" id="nodeModalBackdrop">
+        <div class="node-modal-light" id="nodeModal">
+            <button class="modal-close" id="modalClose" style="background:#F1F5F9; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header" style="margin-top:1.5rem;">
+                <span class="phase-title-badge" id="modalCategory">Sub-Category</span>
+                <h3 id="modalNodeTitle" style="font-size:1.6rem; color:var(--accent-navy); margin-top:0.5rem;">Node Title</h3>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-info-circle"></i> Description</h4>
+                <p id="modalDescription" style="color:var(--text-secondary); font-size:0.95rem;"></p>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-list-check"></i> Key Components</h4>
+                <ul id="modalItemsList" class="plan-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="mindmap-engine.js"></script>
+    <script>
+        const phase1Data = {
+            id: 'phase1',
+            number: 1,
+            title: 'Phase I – Research Foundation',
+            description: 'Establishing the epidemiological background, clinical literature, variable taxonomy, and initial screening questionnaires for pediatric Type 2 Diabetes.',
+            subCategories: [
+                {
+                    title: 'Problem Identification',
+                    icon: 'fa-triangle-exclamation',
+                    description: 'Pinpointing pediatric metabolic health crises and screening bottlenecks.',
+                    items: ['Rising childhood obesity', 'Increasing pediatric Type 2 Diabetes', 'Delayed diagnosis', 'Limited screening programs', 'Healthcare burden']
+                },
+                {
+                    title: 'Literature Review',
+                    icon: 'fa-book-medical',
+                    description: 'Comprehensive analysis of clinical guidelines, existing risk scores, and AI models.',
+                    items: ['International Guidelines', 'Indian Guidelines', 'Existing Questionnaires', 'Risk Scores', 'AI Screening Models', 'Research Gaps']
+                },
+                {
+                    title: 'Clinical Variables',
+                    icon: 'fa-clipboard-user',
+                    description: 'Identifying key data points across multi-factorial health dimensions.',
+                    items: ['Demographics', 'Anthropometrics', 'Lifestyle', 'Family History', 'Clinical Signs', 'Laboratory Factors']
+                },
+                {
+                    title: 'Questionnaire Design',
+                    icon: 'fa-file-signature',
+                    description: 'Structuring age-appropriate screening instruments for various target stakeholders.',
+                    items: ['Parent Version', 'School Version', 'Doctor Version', 'Digital Forms', 'Pilot Questionnaire']
+                },
+                {
+                    title: 'Research Outputs',
+                    icon: 'fa-box-archive',
+                    description: 'Core research documentation and preliminary workflow blueprints.',
+                    items: ['Literature Review Report', 'Variable List', 'Questionnaire V1', 'Clinical Workflow', 'Research Report']
+                },
+                {
+                    title: 'Success Criteria',
+                    icon: 'fa-circle-check',
+                    description: 'Milestones required to exit Phase I.',
+                    items: ['Variables Identified', 'Questionnaire Ready', 'Clinical Workflow Drafted', 'Expert Review Ready']
+                }
+            ]
+        };
+
+        const modalBackdrop = document.getElementById('nodeModalBackdrop');
+        const modalClose = document.getElementById('modalClose');
+
+        const engine = new NotebookLMMindMapEngine('mindmapCanvas', null, phase1Data, {
+            onNodeClick: (data) => {
+                document.getElementById('modalNodeTitle').textContent = data.title;
+                document.getElementById('modalCategory').textContent = data.category;
+                document.getElementById('modalDescription').textContent = data.description;
+                const itemsList = document.getElementById('modalItemsList');
+                itemsList.innerHTML = '';
+                data.items.forEach(i => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fa-solid fa-check"></i> ${i}`;
+                    itemsList.appendChild(li);
+                });
+                modalBackdrop.classList.add('open');
+            }
+        });
+
+        modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+        });
+
+        document.getElementById('phaseSearch').addEventListener('input', (e) => engine.search(e.target.value));
+        document.getElementById('btnExpandAll').addEventListener('click', () => engine.expandAll());
+        document.getElementById('btnCollapseAll').addEventListener('click', () => engine.collapseAll());
+    </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase IV: AI Model & Software Development | PediRisk AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <div class="logo-text">
+                    <span class="company-name">OSHIN HEALTHTECH</span>
+                    <span class="sub-name">INNOVATIONS PVT. LTD.</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
+                <a href="team.html" class="nav-link"><i class="fa-solid fa-users"></i> Our Team</a>
+                <a href="index.html#founders" class="nav-link"><i class="fa-solid fa-user-tie"></i> Leadership</a>
+                <a href="index.html#phases-hub" class="nav-link active"><i class="fa-solid fa-sitemap"></i> Project Phases</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#phases-hub" class="btn btn-secondary"><i class="fa-solid fa-grid-2"></i> All Phases Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="phase-page-header">
+            <div class="container">
+                <div class="breadcrumb-nav">
+                    <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+                    <span>Phase IV Roadmap</span>
+                </div>
+                <span class="phase-title-badge" style="background:#FFE4E6; color:#9F1239;">Phase IV Roadmap</span>
+                <h1 class="section-title">Phase IV – AI Model & Software Development</h1>
+                <p class="section-description">
+                    Engineering the digital web platform, cloud APIs, encrypted database, AI inference engine, and multi-stakeholder portals (Parents, Schools, Doctors).
+                </p>
+            </div>
+        </section>
+
+        <!-- Mind Map Section -->
+        <section class="section-padding">
+            <div class="container-wide">
+                <div class="toolbar-light">
+                    <div class="toolbar-search-light">
+                        <i class="fa-solid fa-magnifying-glass search-icon-light"></i>
+                        <input type="text" id="phaseSearch" placeholder="Search Phase IV nodes (e.g. Portals, APIs, Encryption, QA...)" aria-label="Search Phase IV nodes">
+                    </div>
+                    <div class="toolbar-actions-light">
+                        <button class="btn-ctrl-light" id="btnExpandAll"><i class="fa-solid fa-square-plus"></i> Expand All</button>
+                        <button class="btn-ctrl-light" id="btnCollapseAll"><i class="fa-solid fa-square-minus"></i> Collapse All</button>
+                    </div>
+                </div>
+
+                <div class="mindmap-viewport-light">
+                    <div class="mindmap-canvas-light" id="mindmapCanvas"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Plan Section -->
+        <section class="plan-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">SOFTWARE ARCHITECTURE BLUEPRINT</span>
+                    <h2 class="section-title">Phase IV Implementation Plan</h2>
+                </div>
+
+                <div class="plan-grid">
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-desktop"></i></div>
+                            <h3>1. Frontend Portals Development</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Develop mobile-responsive Parent Portal for digital questionnaire submission.</li>
+                            <li><i class="fa-solid fa-check"></i> Build School Dashboard for batch student screening and aggregate analytics.</li>
+                            <li><i class="fa-solid fa-check"></i> Build Doctor Dashboard for clinical decision support and triage review.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-server"></i></div>
+                            <h3>2. Cloud Backend & Encryption API</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Construct RESTful Microservices API layer with JWT authentication.</li>
+                            <li><i class="fa-solid fa-check"></i> Implement AES-256 database encryption at rest and TLS in transit.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <h3>3. AI Real-Time Inference Engine</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Containerize trained ML model pipelines for low-latency scoring.</li>
+                            <li><i class="fa-solid fa-check"></i> Connect SHAP/LIME explainability modules to return risk factor breakdowns.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>4. QA & Security Testing</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Conduct Unit, Integration, and User Acceptance Testing (UAT).</li>
+                            <li><i class="fa-solid fa-check"></i> Perform vulnerability assessment and HIPAA compliance auditing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Node Modal Drawer -->
+    <div class="node-modal-backdrop-light" id="nodeModalBackdrop">
+        <div class="node-modal-light" id="nodeModal">
+            <button class="modal-close" id="modalClose" style="background:#F1F5F9; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header" style="margin-top:1.5rem;">
+                <span class="phase-title-badge" id="modalCategory">Sub-Category</span>
+                <h3 id="modalNodeTitle" style="font-size:1.6rem; color:var(--accent-navy); margin-top:0.5rem;">Node Title</h3>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-info-circle"></i> Description</h4>
+                <p id="modalDescription" style="color:var(--text-secondary); font-size:0.95rem;"></p>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-list-check"></i> Key Components</h4>
+                <ul id="modalItemsList" class="plan-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="mindmap-engine.js"></script>
+    <script>
+        const phase4Data = {
+            id: 'phase4',
+            number: 4,
+            title: 'Phase IV – AI Model & Software Development',
+            description: 'Engineering the digital web platform, cloud APIs, encrypted database, AI inference engine, and multi-stakeholder dashboards.',
+            subCategories: [
+                {
+                    title: 'UI Development',
+                    icon: 'fa-desktop',
+                    description: 'Responsive user interfaces for parents, educators, and doctors.',
+                    items: ['Parent Portal', 'School Dashboard', 'Doctor Dashboard', 'Admin Panel', 'Mobile Interface']
+                },
+                {
+                    title: 'Backend',
+                    icon: 'fa-server',
+                    description: 'Secure, scalable cloud service layer and APIs.',
+                    items: ['APIs', 'Authentication', 'Database', 'Encryption', 'Cloud Storage']
+                },
+                {
+                    title: 'AI Engine',
+                    icon: 'fa-microchip',
+                    description: 'Real-time inference pipeline and recommendation engine.',
+                    items: ['Feature Extraction', 'Prediction Pipeline', 'Explainability Module', 'Recommendation Engine', 'Confidence Score']
+                },
+                {
+                    title: 'Reports',
+                    icon: 'fa-file-pdf',
+                    description: 'Automated generation of individualized and aggregate health reports.',
+                    items: ['Child Report', 'Parent Summary', 'Doctor Report', 'School Analytics', 'Population Dashboard']
+                },
+                {
+                    title: 'Testing',
+                    icon: 'fa-shield-halved',
+                    description: 'Rigorous security, privacy, performance, and usability audits.',
+                    items: ['Unit Testing', 'Integration Testing', 'Security Testing', 'Performance Testing', 'User Acceptance Testing']
+                }
+            ]
+        };
+
+        const modalBackdrop = document.getElementById('nodeModalBackdrop');
+        const modalClose = document.getElementById('modalClose');
+
+        const engine = new NotebookLMMindMapEngine('mindmapCanvas', null, phase4Data, {
+            onNodeClick: (data) => {
+                document.getElementById('modalNodeTitle').textContent = data.title;
+                document.getElementById('modalCategory').textContent = data.category;
+                document.getElementById('modalDescription').textContent = data.description;
+                const itemsList = document.getElementById('modalItemsList');
+                itemsList.innerHTML = '';
+                data.items.forEach(i => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fa-solid fa-check"></i> ${i}`;
+                    itemsList.appendChild(li);
+                });
+                modalBackdrop.classList.add('open');
+            }
+        });
+
+        modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+        });
+
+        document.getElementById('phaseSearch').addEventListener('input', (e) => engine.search(e.target.value));
+        document.getElementById('btnExpandAll').addEventListener('click', () => engine.expandAll());
+        document.getElementById('btnCollapseAll').addEventListener('click', () => engine.collapseAll());
+    </script>
+</body>
+</html>

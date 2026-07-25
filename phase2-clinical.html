@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase II: Clinical Scientific Consultation | PediRisk AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <div class="logo-text">
+                    <span class="company-name">OSHIN HEALTHTECH</span>
+                    <span class="sub-name">INNOVATIONS PVT. LTD.</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
+                <a href="team.html" class="nav-link"><i class="fa-solid fa-users"></i> Our Team</a>
+                <a href="index.html#founders" class="nav-link"><i class="fa-solid fa-user-tie"></i> Leadership</a>
+                <a href="index.html#phases-hub" class="nav-link active"><i class="fa-solid fa-sitemap"></i> Project Phases</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#phases-hub" class="btn btn-secondary"><i class="fa-solid fa-grid-2"></i> All Phases Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="phase-page-header">
+            <div class="container">
+                <div class="breadcrumb-nav">
+                    <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+                    <span>Phase II Roadmap</span>
+                </div>
+                <span class="phase-title-badge" style="background:#D1FAE5; color:#065F46;">Phase II Roadmap</span>
+                <h1 class="section-title">Phase II – Clinical Scientific Consultation</h1>
+                <p class="section-description">
+                    Multi-disciplinary expert review, clinical variable validation, risk scoring framework formulation, and referral pathway protocol definition.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mind Map Section -->
+        <section class="section-padding">
+            <div class="container-wide">
+                <div class="toolbar-light">
+                    <div class="toolbar-search-light">
+                        <i class="fa-solid fa-magnifying-glass search-icon-light"></i>
+                        <input type="text" id="phaseSearch" placeholder="Search Phase II nodes (e.g. Diabetologist, Scoring, Referral...)" aria-label="Search Phase II nodes">
+                    </div>
+                    <div class="toolbar-actions-light">
+                        <button class="btn-ctrl-light" id="btnExpandAll"><i class="fa-solid fa-square-plus"></i> Expand All</button>
+                        <button class="btn-ctrl-light" id="btnCollapseAll"><i class="fa-solid fa-square-minus"></i> Collapse All</button>
+                    </div>
+                </div>
+
+                <div class="mindmap-viewport-light">
+                    <div class="mindmap-canvas-light" id="mindmapCanvas"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Plan Section -->
+        <section class="plan-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">CLINICAL PROTOCOL BLUEPRINT</span>
+                    <h2 class="section-title">Phase II Implementation Plan</h2>
+                </div>
+
+                <div class="plan-grid">
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <h3>1. Expert Advisory Panel Setup</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Form multi-specialty board (Pediatricians, Endocrinologists, Diabetologists, Epidemiologists).</li>
+                            <li><i class="fa-solid fa-check"></i> Schedule structured Delphi rounds to review candidate risk variables.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                            <h3>2. Clinical Logic & Variable Pruning</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Eliminate subjective or low-sensitivity variables to optimize response speed.</li>
+                            <li><i class="fa-solid fa-check"></i> Standardize response formats (binary, numerical, ordinal scales).</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-calculator"></i></div>
+                            <h3>3. Risk Weightage & Scoring Framework</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Establish weighted coefficient bounds for physical signs and family history.</li>
+                            <li><i class="fa-solid fa-check"></i> Define risk tiers (Low Risk, Moderate Risk, High Risk) with actionable cut-offs.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-route"></i></div>
+                            <h3>4. Clinical Referral Protocol</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Build referral decision pathways connecting school screenings to pediatric clinics.</li>
+                            <li><i class="fa-solid fa-check"></i> Finalize Questionnaire V2 & clinical validation report.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Node Modal Drawer -->
+    <div class="node-modal-backdrop-light" id="nodeModalBackdrop">
+        <div class="node-modal-light" id="nodeModal">
+            <button class="modal-close" id="modalClose" style="background:#F1F5F9; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header" style="margin-top:1.5rem;">
+                <span class="phase-title-badge" id="modalCategory">Sub-Category</span>
+                <h3 id="modalNodeTitle" style="font-size:1.6rem; color:var(--accent-navy); margin-top:0.5rem;">Node Title</h3>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-info-circle"></i> Description</h4>
+                <p id="modalDescription" style="color:var(--text-secondary); font-size:0.95rem;"></p>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-list-check"></i> Key Components</h4>
+                <ul id="modalItemsList" class="plan-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="mindmap-engine.js"></script>
+    <script>
+        const phase2Data = {
+            id: 'phase2',
+            number: 2,
+            title: 'Phase II – Clinical Scientific Consultation',
+            description: 'Multi-disciplinary expert review, clinical variable validation, scoring protocol design, and referral pathway definition.',
+            subCategories: [
+                {
+                    title: 'Expert Panel',
+                    icon: 'fa-user-md',
+                    description: 'Assembling cross-domain clinical and public health leaders.',
+                    items: ['Pediatrician', 'Diabetologist', 'Nutritionist', 'Epidemiologist', 'Public Health Expert', 'AI Consultant']
+                },
+                {
+                    title: 'Clinical Validation',
+                    icon: 'fa-stethoscope',
+                    description: 'Rigorous vetting of screening parameters and clinical decision rules.',
+                    items: ['Validate Variables', 'Remove Weak Variables', 'Add Missing Variables', 'Standardize Responses', 'Validate Clinical Logic']
+                },
+                {
+                    title: 'Scoring Framework',
+                    icon: 'fa-calculator',
+                    description: 'Deriving risk weights, cut-offs, and risk tier categorization.',
+                    items: ['Risk Weightage', 'Composite Score', 'Risk Categories', 'Cut-off Values', 'Referral Criteria']
+                },
+                {
+                    title: 'Clinical Workflow',
+                    icon: 'fa-route',
+                    description: 'Defining end-to-end patient journey from school checkup to specialist doctor.',
+                    items: ['School Screening', 'Parent Assessment', 'AI Screening', 'Doctor Review', 'Referral Pathway']
+                },
+                {
+                    title: 'Deliverables',
+                    icon: 'fa-folder-closed',
+                    description: 'Standardized clinical instruments ready for machine learning formulation.',
+                    items: ['Questionnaire V2', 'Clinical Score System', 'Risk Categories Map', 'Referral Protocol', 'Clinical Documentation']
+                },
+                {
+                    title: 'Success Criteria',
+                    icon: 'fa-award',
+                    description: 'Verification of clinical safety and consensus.',
+                    items: ['Clinical Approval', 'Questionnaire Validation', 'Scoring Validation', 'Ready for AI Design']
+                }
+            ]
+        };
+
+        const modalBackdrop = document.getElementById('nodeModalBackdrop');
+        const modalClose = document.getElementById('modalClose');
+
+        const engine = new NotebookLMMindMapEngine('mindmapCanvas', null, phase2Data, {
+            onNodeClick: (data) => {
+                document.getElementById('modalNodeTitle').textContent = data.title;
+                document.getElementById('modalCategory').textContent = data.category;
+                document.getElementById('modalDescription').textContent = data.description;
+                const itemsList = document.getElementById('modalItemsList');
+                itemsList.innerHTML = '';
+                data.items.forEach(i => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fa-solid fa-check"></i> ${i}`;
+                    itemsList.appendChild(li);
+                });
+                modalBackdrop.classList.add('open');
+            }
+        });
+
+        modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+        });
+
+        document.getElementById('phaseSearch').addEventListener('input', (e) => engine.search(e.target.value));
+        document.getElementById('btnExpandAll').addEventListener('click', () => engine.expandAll());
+        document.getElementById('btnCollapseAll').addEventListener('click', () => engine.collapseAll());
+    </script>
+</body>
+</html>

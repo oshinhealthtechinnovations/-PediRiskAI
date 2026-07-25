@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase III: AI Scientific Consultation | PediRisk AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon"><i class="fa-solid fa-wave-square"></i></div>
+                <div class="logo-text">
+                    <span class="company-name">OSHIN HEALTHTECH</span>
+                    <span class="sub-name">INNOVATIONS PVT. LTD.</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
+                <a href="team.html" class="nav-link"><i class="fa-solid fa-users"></i> Our Team</a>
+                <a href="index.html#founders" class="nav-link"><i class="fa-solid fa-user-tie"></i> Leadership</a>
+                <a href="index.html#phases-hub" class="nav-link active"><i class="fa-solid fa-sitemap"></i> Project Phases</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="index.html#phases-hub" class="btn btn-secondary"><i class="fa-solid fa-grid-2"></i> All Phases Hub</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="phase-page-header">
+            <div class="container">
+                <div class="breadcrumb-nav">
+                    <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
+                    <span>Phase III Roadmap</span>
+                </div>
+                <span class="phase-title-badge" style="background:#EDE9FE; color:#5B21B6;">Phase III Roadmap</span>
+                <h1 class="section-title">Phase III – AI Scientific Consultation</h1>
+                <p class="section-description">
+                    Designing data strategy, feature engineering pipelines, predictive machine learning algorithms, and explainable AI (SHAP & LIME) decision frameworks.
+                </p>
+            </div>
+        </section>
+
+        <!-- Mind Map Section -->
+        <section class="section-padding">
+            <div class="container-wide">
+                <div class="toolbar-light">
+                    <div class="toolbar-search-light">
+                        <i class="fa-solid fa-magnifying-glass search-icon-light"></i>
+                        <input type="text" id="phaseSearch" placeholder="Search Phase III nodes (e.g. XGBoost, SHAP, LIME, ROC-AUC...)" aria-label="Search Phase III nodes">
+                    </div>
+                    <div class="toolbar-actions-light">
+                        <button class="btn-ctrl-light" id="btnExpandAll"><i class="fa-solid fa-square-plus"></i> Expand All</button>
+                        <button class="btn-ctrl-light" id="btnCollapseAll"><i class="fa-solid fa-square-minus"></i> Collapse All</button>
+                    </div>
+                </div>
+
+                <div class="mindmap-viewport-light">
+                    <div class="mindmap-canvas-light" id="mindmapCanvas"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Plan Section -->
+        <section class="plan-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">AI & DATA SCIENCE BLUEPRINT</span>
+                    <h2 class="section-title">Phase III Implementation Plan</h2>
+                </div>
+
+                <div class="plan-grid">
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-database"></i></div>
+                            <h3>1. Data Governance & Inclusion Strategy</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Define data ingestion standards and anonymization pipelines.</li>
+                            <li><i class="fa-solid fa-check"></i> Establish strict inclusion/exclusion clinical criteria for training data.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-gears"></i></div>
+                            <h3>2. Feature Engineering & Selection</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Construct derived clinical variables (e.g., Waist-Height ratio, risk interaction scores).</li>
+                            <li><i class="fa-solid fa-check"></i> Perform feature importance ranking using Random Forest and Lasso.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>3. Machine Learning Model Training</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Benchmark XGBoost, LightGBM, Random Forest, Logistic Regression, and Neural Networks.</li>
+                            <li><i class="fa-solid fa-check"></i> Perform k-fold cross-validation and hyperparameter optimization.</li>
+                        </ul>
+                    </div>
+
+                    <div class="plan-card">
+                        <div class="plan-card-header">
+                            <div class="plan-icon"><i class="fa-solid fa-eye"></i></div>
+                            <h3>4. Explainable AI (XAI) Framework</h3>
+                        </div>
+                        <ul class="plan-list">
+                            <li><i class="fa-solid fa-check"></i> Integrate SHAP (Shapley Additive exPlanations) for global feature importance.</li>
+                            <li><i class="fa-solid fa-check"></i> Implement LIME for individualized patient-level risk factor explanations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Node Modal Drawer -->
+    <div class="node-modal-backdrop-light" id="nodeModalBackdrop">
+        <div class="node-modal-light" id="nodeModal">
+            <button class="modal-close" id="modalClose" style="background:#F1F5F9; border:none; width:36px; height:36px; border-radius:50%; cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-header" style="margin-top:1.5rem;">
+                <span class="phase-title-badge" id="modalCategory">Sub-Category</span>
+                <h3 id="modalNodeTitle" style="font-size:1.6rem; color:var(--accent-navy); margin-top:0.5rem;">Node Title</h3>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-info-circle"></i> Description</h4>
+                <p id="modalDescription" style="color:var(--text-secondary); font-size:0.95rem;"></p>
+            </div>
+            <div style="margin-top:1.5rem;">
+                <h4 style="color:var(--accent-teal); margin-bottom:0.5rem;"><i class="fa-solid fa-list-check"></i> Key Components</h4>
+                <ul id="modalItemsList" class="plan-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="mindmap-engine.js"></script>
+    <script>
+        const phase3Data = {
+            id: 'phase3',
+            number: 3,
+            title: 'Phase III – AI Scientific Consultation',
+            description: 'Designing data strategy, feature engineering pipelines, machine learning algorithms, and explainable AI (SHAP & LIME) frameworks.',
+            subCategories: [
+                {
+                    title: 'Data Strategy',
+                    icon: 'fa-database',
+                    description: 'Defining sampling protocols, data ethics, and dataset governance.',
+                    items: ['Data Sources', 'Sample Size', 'Inclusion Criteria', 'Exclusion Criteria', 'Data Governance']
+                },
+                {
+                    title: 'Feature Engineering',
+                    icon: 'fa-gears',
+                    description: 'Extracting non-linear interaction terms and clinical derived variables.',
+                    items: ['Clinical Features', 'Lifestyle Features', 'Anthropometric Features', 'Family History', 'Derived Variables']
+                },
+                {
+                    title: 'AI Models',
+                    icon: 'fa-brain',
+                    description: 'Benchmarking ensemble machine learning models.',
+                    items: ['Logistic Regression', 'Decision Tree', 'Random Forest', 'XGBoost', 'LightGBM', 'Neural Networks', 'Ensemble Learning']
+                },
+                {
+                    title: 'Explainable AI',
+                    icon: 'fa-eye',
+                    description: 'Ensuring transparent, non-blackbox risk explanations for clinicians.',
+                    items: ['SHAP', 'LIME', 'Feature Importance', 'Decision Path', 'Risk Explanation']
+                },
+                {
+                    title: 'Validation Strategy',
+                    icon: 'fa-vial',
+                    description: 'Ensuring statistical robustness and cross-domain generalization.',
+                    items: ['Train/Test Split', 'Cross Validation', 'External Validation', 'Calibration', 'Sensitivity Analysis']
+                },
+                {
+                    title: 'Performance Metrics',
+                    icon: 'fa-chart-line',
+                    description: 'Quantitative evaluation metrics for clinical utility.',
+                    items: ['Accuracy', 'Precision', 'Recall', 'Specificity', 'ROC-AUC', 'F1 Score', 'Calibration Curve']
+                }
+            ]
+        };
+
+        const modalBackdrop = document.getElementById('nodeModalBackdrop');
+        const modalClose = document.getElementById('modalClose');
+
+        const engine = new NotebookLMMindMapEngine('mindmapCanvas', null, phase3Data, {
+            onNodeClick: (data) => {
+                document.getElementById('modalNodeTitle').textContent = data.title;
+                document.getElementById('modalCategory').textContent = data.category;
+                document.getElementById('modalDescription').textContent = data.description;
+                const itemsList = document.getElementById('modalItemsList');
+                itemsList.innerHTML = '';
+                data.items.forEach(i => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<i class="fa-solid fa-check"></i> ${i}`;
+                    itemsList.appendChild(li);
+                });
+                modalBackdrop.classList.add('open');
+            }
+        });
+
+        modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+        });
+
+        document.getElementById('phaseSearch').addEventListener('input', (e) => engine.search(e.target.value));
+        document.getElementById('btnExpandAll').addEventListener('click', () => engine.expandAll());
+        document.getElementById('btnCollapseAll').addEventListener('click', () => engine.collapseAll());
+    </script>
+</body>
+</html>
