@@ -678,7 +678,95 @@ body {
     overflow-x: auto;
 }
 
-/* DOM-Flow Mind Map View Mode Switcher Toolbar */
+/* Phase Card Link Wrappers */
+.phase-card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: block;
+    height: 100%;
+}
+
+.phase-card-link:hover {
+    text-decoration: none !important;
+}
+
+.phase-card-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-smooth);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    background: #FFFFFF;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.phase-card-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.phase-card-link:hover .phase-card-item {
+    transform: translateY(-6px);
+    border-color: var(--accent-teal);
+    box-shadow: var(--shadow-md);
+}
+
+.phase-number-badge {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--accent-teal);
+    background: #E0F2FE;
+    padding: 0.3rem 0.8rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1rem;
+    align-self: flex-start;
+}
+
+.phase-card-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+    margin-bottom: 0.75rem;
+}
+
+.phase-card-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.view-phase-btn {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto;
+    transition: transform var(--transition-fast);
+}
+
+.phase-card-link:hover .view-phase-btn {
+    color: var(--accent-teal);
+    transform: translateX(4px);
+}
 .view-switcher-group {
     display: inline-flex;
     background: #E2E8F0;
