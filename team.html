@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -29,27 +29,46 @@
                 <a href="services.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> Services</a>
                 <a href="pedirisk-ai.html" class="nav-link"><i class="fa-solid fa-microscope"></i> PediRisk AI</a>
                 <a href="team.html" class="nav-link active"><i class="fa-solid fa-users"></i> Our Team</a>
-                <a href="index.html#phases-hub" class="nav-link"><i class="fa-solid fa-sitemap"></i> Project Phases</a>
             </nav>
 
             <div class="nav-actions">
-                <a href="index.html#phases-hub" class="btn btn-secondary"><i class="fa-solid fa-grid-2"></i> 6 Phase Hub</a>
+                <a href="pedirisk-ai.html" class="btn btn-secondary"><i class="fa-solid fa-microscope"></i> PediRisk AI Platform</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="phase-page-header">
+        <!-- Redesigned Premium Hero Header Section -->
+        <section class="hero-light" style="padding: 3rem 0; background: linear-gradient(135deg, #FDF2F8 0%, #EFF6FF 100%); border-bottom:1px solid #E2E8F0;">
             <div class="container">
-                <div class="breadcrumb-nav">
+                <div class="breadcrumb-nav" style="margin-bottom:1.25rem;">
                     <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
                     <span>Our Team</span>
                 </div>
-                <span class="phase-title-badge" style="background:#FCE7F3; color:#9D174D;">LEADERSHIP & SCIENTISTS</span>
-                <h1 class="section-title">Meet Our Team</h1>
-                <p class="section-description">
-                    The multidisciplinary team of founders, clinical researchers, data scientists, and software engineers pioneering PediRisk AI at Oshin Healthtech Innovations.
-                </p>
+
+                <div class="ui-card-feature" style="padding: 3rem !important; border-top: 5px solid var(--accent-blue) !important;">
+                    <div class="hero-card-grid">
+                        <div>
+                            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+                                <span class="ui-card-badge" style="background:#FCE7F3; color:#9D174D;"><i class="fa-solid fa-users"></i> EXECUTIVE LEADERSHIP</span>
+                                <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;"><i class="fa-solid fa-flask"></i> CLINICAL RESEARCHERS</span>
+                                <span class="ui-card-badge" style="background:#DCFCE7; color:#15803D;"><i class="fa-solid fa-code"></i> SOFTWARE ENGINEERS</span>
+                            </div>
+                            
+                            <h1 class="hero-title" style="font-size: 2.4rem; line-height: 1.25; margin: 0.75rem 0; color:var(--accent-navy);">
+                                Meet Our Team
+                            </h1>
+                            
+                            <p class="hero-description" style="font-size: 1.05rem; line-height: 1.65; color:var(--text-primary);">
+                                The multidisciplinary team of founders, clinical researchers, data scientists, and software engineers pioneering PediRisk AI at Oshin Healthtech Innovations.
+                            </p>
+                        </div>
+
+                        <div class="hero-image-card">
+                            <img src="assets/hero_banner.png" alt="Oshin Healthtech Leadership Team" class="hero-img" style="width:100%; height:auto; border-radius:var(--radius-lg); box-shadow:0 10px 30px rgba(0,0,0,0.08); border:1px solid #E2E8F0;">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
