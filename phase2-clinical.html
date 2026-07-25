@@ -61,6 +61,10 @@
                         <input type="text" id="phaseSearch" placeholder="Search Phase II nodes (e.g. Diabetologist, Scoring, Referral...)" aria-label="Search Phase II nodes">
                     </div>
                     <div class="toolbar-actions-light">
+                        <div class="view-switcher-group">
+                            <button class="btn-view-mode active-mode" id="btnModeTree"><i class="fa-solid fa-sitemap"></i> Tree View</button>
+                            <button class="btn-view-mode" id="btnModeGrid"><i class="fa-solid fa-border-all"></i> Grid Cards</button>
+                        </div>
                         <button class="btn-ctrl-light" id="btnExpandAll"><i class="fa-solid fa-square-plus"></i> Expand All</button>
                         <button class="btn-ctrl-light" id="btnCollapseAll"><i class="fa-solid fa-square-minus"></i> Collapse All</button>
                     </div>
@@ -217,6 +221,17 @@
         modalClose.addEventListener('click', () => modalBackdrop.classList.remove('open'));
         modalBackdrop.addEventListener('click', (e) => {
             if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
+        });
+
+        document.getElementById('btnModeTree').addEventListener('click', (e) => {
+            document.getElementById('btnModeTree').classList.add('active-mode');
+            document.getElementById('btnModeGrid').classList.remove('active-mode');
+            engine.setViewMode('tree');
+        });
+        document.getElementById('btnModeGrid').addEventListener('click', (e) => {
+            document.getElementById('btnModeGrid').classList.add('active-mode');
+            document.getElementById('btnModeTree').classList.remove('active-mode');
+            engine.setViewMode('grid');
         });
 
         document.getElementById('phaseSearch').addEventListener('input', (e) => engine.search(e.target.value));

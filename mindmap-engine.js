@@ -1,6 +1,6 @@
 /* ==========================================================================
    OSHIN HEALTHTECH INNOVATIONS PVT. LTD.
-   PediRisk AI - NotebookLM DOM-Flow Mind Map Engine
+   PediRisk AI - Multi-View Mind Map Engine (Tree & Grid Modes)
    ========================================================================== */
 
 class NotebookLMMindMapEngine {
@@ -9,7 +9,10 @@ class NotebookLMMindMapEngine {
         this.phaseData = phaseData;
         this.options = options;
 
-        // Branches are COLLAPSED BY DEFAULT (NotebookLM feature)
+        // View Mode: 'tree' (NotebookLM Tree) or 'grid' (Interactive Cards Grid)
+        this.currentView = 'tree';
+
+        // Branches are COLLAPSED BY DEFAULT
         this.expandedSubCategories = new Set();
 
         this.init();
@@ -20,9 +23,24 @@ class NotebookLMMindMapEngine {
         this.render();
     }
 
+    setViewMode(mode) {
+        if (mode !== 'tree' && mode !== 'grid') return;
+        this.currentView = mode;
+        this.render();
+    }
+
     render() {
+        if (!this.container) return;
         this.container.innerHTML = '';
 
+        if (this.currentView === 'grid') {
+            this.renderGridMode();
+        } else {
+            this.renderTreeMode();
+        }
+    }
+
+    renderTreeMode() {
         const treeRoot = document.createElement('div');
         treeRoot.className = 'tree-root-flow';
 
@@ -138,6 +156,75 @@ class NotebookLMMindMapEngine {
 
         treeRoot.appendChild(subColumn);
         this.container.appendChild(treeRoot);
+    }
+
+    renderGridMode() {
+        const gridWrapper = document.createElement('div');
+        gridWrapper.className = 'mindmap-grid-dashboard';
+
+        this.phaseData.subCategories.forEach((sub, subIdx) => {
+            const isExpanded = this.expandedSubCategories.has(subIdx);
+
+            const card = document.createElement('div');
+            card.className = `mindmap-grid-card ${isExpanded ? 'active-grid-card' : ''}`;
+            card.id = `sub-${this.phaseData.id}-${subIdx}`;
+
+            card.innerHTML = `
+                <div class="grid-card-header">
+                    <div class="grid-card-icon"><i class="fa-solid ${sub.icon}"></i></div>
+                    <div class="grid-card-meta">
+                        <h3>${sub.title}</h3>
+                        <span class="deliverable-count">${sub.items.length} Action Deliverables</span>
+                    </div>
+                </div>
+                <p class="grid-card-desc">${sub.description}</p>
+
+                <div class="grid-card-action">
+                    <button class="btn-grid-toggle" id="grid-toggle-${this.phaseData.id}-${subIdx}">
+                        <i class="fa-solid ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+                        ${isExpanded ? 'Hide Deliverables' : 'View Deliverables'}
+                    </button>
+                </div>
+
+                <div class="grid-items-container ${isExpanded ? 'show' : ''}">
+                    <ul class="grid-items-list">
+                        ${sub.items.map((item, itemIdx) => `
+                            <li id="leaf-${this.phaseData.id}-${subIdx}-${itemIdx}">
+                                <i class="fa-solid fa-circle-check"></i> ${item}
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+
+            // Toggle Expand in Grid Mode
+            const btnToggle = card.querySelector(`#grid-toggle-${this.phaseData.id}-${subIdx}`);
+            btnToggle.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (this.expandedSubCategories.has(subIdx)) {
+                    this.expandedSubCategories.delete(subIdx);
+                } else {
+                    this.expandedSubCategories.add(subIdx);
+                }
+                this.render();
+            });
+
+            card.addEventListener('click', () => {
+                if (this.options.onNodeClick) {
+                    this.options.onNodeClick({
+                        title: sub.title,
+                        category: `${this.phaseData.title} Sub-Category`,
+                        description: sub.description,
+                        items: sub.items,
+                        metrics: 'Verified research & execution deliverable.'
+                    });
+                }
+            });
+
+            gridWrapper.appendChild(card);
+        });
+
+        this.container.appendChild(gridWrapper);
     }
 
     expandAll() {
