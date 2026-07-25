@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -40,8 +40,8 @@
     </header>
 
     <main>
-        <!-- Hero Section encapsulated in Premium Card Container -->
-        <section class="hero-light" style="padding: 4rem 0 3.5rem 0; background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%); border-bottom:1px solid #E2E8F0;">
+        <!-- Hero Section encapsulated in Executive Showcase Container -->
+        <section class="hero-light" style="padding: 3rem 0; background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%); border-bottom:1px solid #E2E8F0;">
             <div class="container">
                 <div class="breadcrumb-nav" style="margin-bottom:1.25rem;">
                     <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i>
@@ -49,154 +49,169 @@
                 </div>
 
                 <div class="ui-card-feature" style="padding: 3rem !important; border-top: 5px solid var(--accent-teal) !important;">
-                    <div class="grid-2 align-center" style="gap:3.5rem;">
+                    <div class="hero-card-grid">
                         <div>
-                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;"><i class="fa-solid fa-microscope"></i> FLAGSHIP HEALTHCARE AI INITIATIVE</span>
+                            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+                                <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;"><i class="fa-solid fa-microscope"></i> FLAGSHIP HEALTHCARE AI</span>
+                                <span class="ui-card-badge" style="background:#DCFCE7; color:#15803D;"><i class="fa-solid fa-shield-check"></i> 100% NON-INVASIVE</span>
+                                <span class="ui-card-badge" style="background:#F3E8FF; color:#7E22CE;"><i class="fa-solid fa-brain-circuit"></i> XGBOOST + SHAP</span>
+                            </div>
                             
-                            <h1 class="hero-title" style="font-size: 2.5rem; line-height: 1.25; margin: 1rem 0; color:var(--accent-navy);">
+                            <h1 class="hero-title" style="font-size: 2.4rem; line-height: 1.25; margin: 0.75rem 0; color:var(--accent-navy);">
                                 PediRisk AI: Non-Invasive Pediatric T2D Risk Assessment Platform
                             </h1>
                             
-                            <p class="hero-description" style="font-size: 1.08rem; line-height: 1.65; color:var(--text-primary);">
-                                A Machine Learning & Explainable AI (XAI) Framework for Early Identification of Pediatric Type 2 Diabetes and Metabolic Syndrome in Children & Adolescents.
+                            <p class="hero-description" style="font-size: 1.05rem; line-height: 1.65; color:var(--text-primary);">
+                                A Machine Learning & Explainable AI (XAI) Framework for Early Risk Identification of Pediatric Type 2 Diabetes and Metabolic Syndrome in Children & Adolescents.
                             </p>
 
-                            <div class="hero-buttons" style="margin-top:2rem;">
-                                <a href="#project-details" class="btn btn-primary btn-lg"><i class="fa-solid fa-book-medical"></i> Read Need & Objectives</a>
-                                <a href="#phases-grid-section" class="btn btn-secondary btn-lg"><i class="fa-solid fa-sitemap"></i> Explore 6 Phases Grid</a>
+                            <div class="hero-buttons" style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+                                <a href="#need-section" class="btn btn-primary btn-lg"><i class="fa-solid fa-notes-medical"></i> View Clinical Necessity</a>
+                                <a href="#aim-section" class="btn btn-secondary btn-lg"><i class="fa-solid fa-bullseye"></i> Research Objectives</a>
                             </div>
                         </div>
 
                         <div class="hero-image-card">
-                            <img src="assets/hero_banner.png" alt="PediRisk AI Screening Platform" class="hero-img" style="border-radius:var(--radius-lg); box-shadow:0 10px 30px rgba(0,0,0,0.08); border:1px solid #E2E8F0;">
+                            <img src="assets/hero_banner.png" alt="PediRisk AI Screening Platform" class="hero-img" style="width:100%; height:auto; border-radius:var(--radius-lg); box-shadow:0 10px 30px rgba(0,0,0,0.08); border:1px solid #E2E8F0;">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Need of the Project & Aim/Objectives Cards Section -->
-        <section id="project-details" class="section-padding" style="background:#FFFFFF; border-bottom:1px solid #E2E8F0;">
+        <!-- Section 1: Need of the Project (Executive 2x2 Mini-Card Grid) -->
+        <section id="need-section" class="section-padding" style="background:#FFFFFF; border-bottom:1px solid #E2E8F0;">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-subtitle">PROJECT FOUNDATION & PURPOSE</span>
-                    <h2 class="section-title">Need of the Project & Core Objectives</h2>
-                    <p class="section-description">
-                        Understanding the clinical necessity and primary research targets behind the PediRisk AI framework.
+                    <span class="section-subtitle" style="color:#DC2626;"><i class="fa-solid fa-triangle-exclamation"></i> CLINICAL NECESSITY</span>
+                    <h2 class="section-title">1. Need of the Project</h2>
+                    <p class="section-description" style="max-width:750px; margin-left:auto; margin-right:auto;">
+                        Pediatric Type 2 Diabetes (T2D) is an escalating public health crisis. The PediRisk AI framework directly solves four critical healthcare challenges:
                     </p>
                 </div>
 
-                <div class="grid-2" style="gap:2.5rem; align-items:stretch;">
+                <!-- 2x2 GRID OF 4 CLINICAL CHALLENGE MINI-CARDS -->
+                <div class="grid-2x2">
                     
-                    <!-- Left Premium Card: Need of the Project -->
-                    <div class="ui-card-feature" style="border-top: 5px solid #DC2626 !important;">
-                        <div class="ui-card-header-flex">
-                            <div class="ui-card-badge" style="background:#FEE2E2 !important; color:#DC2626 !important;">CLINICAL NECESSITY</div>
-                            <div class="ui-card-icon-box" style="background:#FEE2E2 !important; color:#DC2626 !important;"><i class="fa-solid fa-notes-medical"></i></div>
+                    <!-- Challenge 1 -->
+                    <div class="challenge-card-mini">
+                        <div class="challenge-card-header">
+                            <div class="challenge-icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <span class="challenge-tag">HIGH URGENCY</span>
                         </div>
-                        <h3>1. Need of the Project</h3>
-                        <p>
-                            Pediatric Type 2 Diabetes (T2D) and early metabolic syndrome have emerged as major public health threats in children and adolescents. The critical need for PediRisk AI arises from four major clinical challenges:
-                        </p>
-                        
-                        <ul class="ui-card-checklist">
-                            <li>
-                                <i class="fa-solid fa-triangle-exclamation" style="color:#DC2626 !important;"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Silent & Rapid Disease Progression:</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Unlike adult diabetes, pediatric T2D progresses rapidly, causing irreversible beta-cell loss before symptoms appear.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-syringe" style="color:#DC2626 !important;"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Invasive Blood Draw Barriers:</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Routine blood tests (HbA1c, OGTT) cause severe needle anxiety in young children, leading to low screening compliance in schools.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-sack-dollar" style="color:#DC2626 !important;"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">High Costs of Mass Screening:</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Large-scale blood phlebotomy programs in public schools are financially prohibitive and logistically unfeasible.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-xmark" style="color:#DC2626 !important;"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Lack of Early Non-Invasive Tools:</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Current screening relies solely on basic BMI, which fails to capture central adiposity or clinical skin markers like Acanthosis Nigricans.</span>
-                                </div>
-                            </li>
-                        </ul>
+                        <h4>Silent & Rapid Progression</h4>
+                        <p>Unlike adult diabetes, pediatric T2D progresses rapidly, causing irreversible pancreatic beta-cell destruction before overt symptoms manifest.</p>
                     </div>
 
-                    <!-- Right Premium Card: Aim & Objectives -->
-                    <div class="ui-card-feature" style="border-top: 5px solid var(--accent-teal) !important;">
-                        <div class="ui-card-header-flex">
-                            <div class="ui-card-badge" style="background:#E0F2FE !important; color:#0369A1 !important;">RESEARCH TARGETS</div>
-                            <div class="ui-card-icon-box"><i class="fa-solid fa-bullseye"></i></div>
+                    <!-- Challenge 2 -->
+                    <div class="challenge-card-mini">
+                        <div class="challenge-card-header">
+                            <div class="challenge-icon-box"><i class="fa-solid fa-syringe"></i></div>
+                            <span class="challenge-tag">SCREENING BARRIER</span>
                         </div>
-                        <h3>2. Aim & Objectives</h3>
-                        <p>
-                            <strong style="color:var(--accent-navy);">Primary Aim:</strong> To develop, validate, and deploy an explainable machine learning platform for 100% non-invasive early risk stratification of pediatric Type 2 Diabetes.
-                        </p>
+                        <h4>Invasive Blood Draw Anxiety</h4>
+                        <p>Routine diagnostic blood draws (HbA1c, OGTT) cause severe phlebotomy fear in children, resulting in extremely low screening compliance in schools.</p>
+                    </div>
 
-                        <h4 style="font-family:var(--font-heading); font-size:1.05rem; color:var(--accent-navy); margin-bottom:0.75rem;">Core Project Objectives:</h4>
-                        <ul class="ui-card-checklist">
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Objective 1: Non-Invasive Data Protocol</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Identify and validate key physical predictors (Waist-to-Height Ratio, BMI percentiles, BP percentiles, skin markers, and family history).</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Objective 2: Explainable AI Model Development</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Train gradient boosting models (XGBoost/LightGBM) integrated with SHAP/LIME for full physician attribution transparency.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Objective 3: Web-Based Calculator Platform</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Deploy an interactive, secure Web application for pediatricians and parents with automated risk scoring and intervention guides.</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <div>
-                                    <strong style="color:var(--accent-navy);">Objective 4: Clinical Pilot & Sensitivity Audit</strong>
-                                    <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Conduct multi-center hospital pilot trials to achieve ≥88% clinical sensitivity against gold-standard lab tests.</span>
-                                </div>
-                            </li>
-                        </ul>
+                    <!-- Challenge 3 -->
+                    <div class="challenge-card-mini">
+                        <div class="challenge-card-header">
+                            <div class="challenge-icon-box"><i class="fa-solid fa-sack-dollar"></i></div>
+                            <span class="challenge-tag">COST IMPACT</span>
+                        </div>
+                        <h4>High Mass Screening Costs</h4>
+                        <p>Large-scale laboratory phlebotomy screening in public school districts is financially prohibitive and logistically unmanageable for healthcare systems.</p>
+                    </div>
+
+                    <!-- Challenge 4 -->
+                    <div class="challenge-card-mini">
+                        <div class="challenge-card-header">
+                            <div class="challenge-icon-box"><i class="fa-solid fa-ruler-combined"></i></div>
+                            <span class="challenge-tag">METHODOLOGY GAP</span>
+                        </div>
+                        <h4>Lack of Non-Invasive Tools</h4>
+                        <p>Existing screening relies on standalone BMI percentiles, failing to detect central adiposity, blood pressure trends, or Acanthosis Nigricans skin markers.</p>
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- 6-Phase Grid Section (2 Rows x 3 Columns) -->
-        <section id="phases-grid-section" class="section-padding" style="background:#F8FAFC; border-top:1px solid #E2E8F0; border-bottom:1px solid #E2E8F0;">
+        <!-- Section 2: Aim & Objectives (Executive 2x2 Numbered Milestone Cards) -->
+        <section id="aim-section" class="section-padding" style="background:#F8FAFC; border-bottom:1px solid #E2E8F0;">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-subtitle">SCIENTIFIC ROADMAP</span>
-                    <h2 class="section-title">The 6 Implementation Phases</h2>
-                    <p class="section-description">
-                        Explore our NotebookLM interactive mind maps detailing the scientific, clinical, and technological framework of PediRisk AI.
+                    <span class="section-subtitle" style="color:var(--accent-teal);"><i class="fa-solid fa-bullseye"></i> RESEARCH TARGETS</span>
+                    <h2 class="section-title">2. Aim & Core Objectives</h2>
+                    <p class="section-description" style="max-width:750px; margin-left:auto; margin-right:auto;">
+                        <strong>Primary Aim:</strong> To build, validate, and deploy an explainable machine learning platform for 100% non-invasive pediatric risk stratification.
                     </p>
+                </div>
+
+                <!-- 2x2 GRID OF 4 NUMBERED OBJECTIVE MILESTONE CARDS -->
+                <div class="grid-2x2">
+                    
+                    <!-- Milestone 01 -->
+                    <div class="objective-card-mini">
+                        <div class="objective-card-header">
+                            <div class="objective-step-pill">01</div>
+                            <span class="objective-status-tag">PROTOCOL VALIDATED</span>
+                        </div>
+                        <h4>Non-Invasive Predictor Protocol</h4>
+                        <p>Define and validate key physical non-invasive parameters: Waist-to-Height Ratio (WtHR), BMI percentiles, blood pressure percentiles, skin markers, and maternal/paternal history.</p>
+                    </div>
+
+                    <!-- Milestone 02 -->
+                    <div class="objective-card-mini">
+                        <div class="objective-card-header">
+                            <div class="objective-step-pill">02</div>
+                            <span class="objective-status-tag">XAI ENGINE BUILT</span>
+                        </div>
+                        <h4>Explainable AI Model Engine</h4>
+                        <p>Train gradient boosting models (XGBoost & LightGBM) integrated with SHAP and LIME algorithms to provide transparent feature attribution for pediatricians.</p>
+                    </div>
+
+                    <!-- Milestone 03 -->
+                    <div class="objective-card-mini">
+                        <div class="objective-card-header">
+                            <div class="objective-step-pill">03</div>
+                            <span class="objective-status-tag">WEB CALCULATOR READY</span>
+                        </div>
+                        <h4>Web Risk Calculator Platform</h4>
+                        <p>Develop an interactive, secure web-based application enabling pediatricians and parents to calculate risk scores with automated intervention guides.</p>
+                    </div>
+
+                    <!-- Milestone 04 -->
+                    <div class="objective-card-mini">
+                        <div class="objective-card-header">
+                            <div class="objective-step-pill">04</div>
+                            <span class="objective-status-tag">CLINICAL PILOT</span>
+                        </div>
+                        <h4>Clinical Pilot & Sensitivity Audit</h4>
+                        <p>Execute multi-center hospital pilot trials to achieve ≥88% clinical sensitivity against gold-standard lab tests (HbA1c & Fasting Glucose).</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: 6-Phase Grid Section (Scientific Roadmap) -->
+        <section id="phases-grid-section" class="section-padding" style="background:#FFFFFF; border-bottom:1px solid #E2E8F0;">
+            <div class="container">
+                
+                <!-- BOLD HIGH-CONTRAST SECTION HEADER -->
+                <div class="section-header text-center" style="margin-bottom:2.5rem;">
+                    <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1; font-weight:700; font-size:0.8rem; padding:0.35rem 1rem; border-radius:50px;"><i class="fa-solid fa-route"></i> NOTEBOOKLM RESEARCH ROADMAP</span>
+                    <h2 class="section-title" style="color:#0F172A !important; font-size:2.3rem; font-weight:800; margin:0.75rem 0 0 0;">3. PediRisk AI Project Phases</h2>
                 </div>
 
                 <!-- STRICT 2-ROW x 3-COLUMN GRID -->
                 <div class="pedirisk-cards-grid">
                     
-                    <!-- Row 1, Card 1: Phase I -->
-                    <div class="ui-card-feature">
+                    <!-- Phase I Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE I</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 01</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-book-open-reader"></i></div>
                         </div>
                         <h3>Research Foundation</h3>
@@ -213,10 +228,10 @@
                         </a>
                     </div>
 
-                    <!-- Row 1, Card 2: Phase II -->
-                    <div class="ui-card-feature">
+                    <!-- Phase II Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE II</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 02</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-notes-medical"></i></div>
                         </div>
                         <h3>Clinical Data Protocol</h3>
@@ -233,10 +248,10 @@
                         </a>
                     </div>
 
-                    <!-- Row 1, Card 3: Phase III -->
-                    <div class="ui-card-feature">
+                    <!-- Phase III Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE III</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 03</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-brain"></i></div>
                         </div>
                         <h3>AI Model & XAI Engine</h3>
@@ -253,10 +268,10 @@
                         </a>
                     </div>
 
-                    <!-- Row 2, Card 4: Phase IV -->
-                    <div class="ui-card-feature">
+                    <!-- Phase IV Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE IV</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 04</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-laptop-code"></i></div>
                         </div>
                         <h3>Software Architecture</h3>
@@ -273,10 +288,10 @@
                         </a>
                     </div>
 
-                    <!-- Row 2, Card 5: Phase V -->
-                    <div class="ui-card-feature">
+                    <!-- Phase V Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE V</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 05</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-vial-circle-check"></i></div>
                         </div>
                         <h3>Clinical Pilot & Validation</h3>
@@ -293,10 +308,10 @@
                         </a>
                     </div>
 
-                    <!-- Row 2, Card 6: Phase VI -->
-                    <div class="ui-card-feature">
+                    <!-- Phase VI Card -->
+                    <div class="phase-card-elevated">
                         <div class="ui-card-header-flex">
-                            <span class="ui-card-badge">PHASE VI</span>
+                            <span class="ui-card-badge" style="background:#E0F2FE; color:#0369A1;">PHASE 06</span>
                             <div class="ui-card-icon-box"><i class="fa-solid fa-chart-line"></i></div>
                         </div>
                         <h3>Deployment & Governance</h3>
@@ -317,49 +332,96 @@
             </div>
         </section>
 
-        <!-- Explainable AI (XAI) Section encapsulated in Premium Card -->
-        <section class="section-padding" style="background:#FFFFFF;">
+        <!-- Section 4: Explainable AI (XAI) Visualizer Feature Widget -->
+        <section class="section-padding" style="background:#F8FAFC;">
             <div class="container">
                 <div class="ui-card-feature" style="padding: 3rem !important; border-top: 5px solid var(--accent-blue) !important;">
                     <div class="grid-2 align-center" style="gap:3.5rem;">
                         <div>
-                            <span class="ui-card-badge" style="background:#EFF6FF; color:#0284C7;">PHYSICIAN TRANSPARENCY</span>
+                            <span class="ui-card-badge" style="background:#EFF6FF; color:#0284C7;"><i class="fa-solid fa-sliders"></i> PHYSICIAN TRANSPARENCY</span>
                             <h2 class="section-title" style="text-align:left; margin:1rem 0; color:var(--accent-navy);">
-                                Explainable AI (XAI) for Clinical Trust
+                                SHAP Feature Attribution Model
                             </h2>
                             <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:1.5rem;">
-                                PediRisk AI rejects "black-box" machine learning. Every risk score prediction comes with clinical feature attribution explanations powered by SHAP (SHapley Additive exPlanations) and LIME.
+                                PediRisk AI rejects "black-box" predictions. Every pediatric risk score generated provides exact SHAP (SHapley Additive exPlanations) attribution weights so physicians know precisely why a child is categorized as high or moderate risk.
                             </p>
 
                             <ul class="ui-card-checklist">
                                 <li>
                                     <i class="fa-solid fa-check"></i>
                                     <div>
-                                        <strong style="color:var(--accent-navy);">Physician Attribution Summary:</strong>
-                                        <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Highlights exactly which factors (e.g. BMI percentile, family history, WtHR) contributed to the score.</span>
+                                        <strong style="color:var(--accent-navy);">Physician Attribution Breakdown:</strong>
+                                        <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Shows exact percentage impact of each non-invasive physical marker.</span>
                                     </div>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-check"></i>
                                     <div>
-                                        <strong style="color:var(--accent-navy);">Actionable Parent Recommendations:</strong>
-                                        <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Generates personalized dietary and lifestyle intervention guidance based on identified risk factors.</span>
+                                        <strong style="color:var(--accent-navy);">Actionable Parent Interventions:</strong>
+                                        <span style="display:block; color:var(--text-secondary); font-size:0.88rem;">Generates targeted lifestyle and dietary guidance tailored to the highest-weight risk factors.</span>
                                     </div>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="white-card" style="padding:2.25rem; background:#F8FAFC; border-left:4px solid var(--accent-teal);">
-                            <h3 style="font-family:var(--font-heading); color:var(--accent-navy); margin-bottom:1rem;"><i class="fa-solid fa-sliders"></i> Key Predictive Variables</h3>
-                            <ul class="ui-card-checklist">
-                                <li><i class="fa-solid fa-circle-check"></i> Waist-to-Height Ratio (WtHR)</li>
-                                <li><i class="fa-solid fa-circle-check"></i> BMI-for-Age Percentiles</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Maternal & Paternal T2D History</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Physical Activity & Screen Time Hours</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Acanthosis Nigricans Skin Observations</li>
-                                <li><i class="fa-solid fa-circle-check"></i> Blood Pressure Percentiles</li>
-                            </ul>
+                        <!-- Interactive SHAP Feature Attribution Weight Bar Chart Widget -->
+                        <div class="xai-progress-widget">
+                            <h4 style="font-family:var(--font-heading); color:var(--accent-navy); margin-bottom:1.25rem; font-size:1.1rem; display:flex; align-items:center; justify-content:space-between;">
+                                <span><i class="fa-solid fa-chart-simple" style="color:var(--accent-teal);"></i> Model Feature Weights</span>
+                                <span style="font-size:0.75rem; color:var(--text-secondary); font-weight:600;">XGBoost SHAP</span>
+                            </h4>
+
+                            <div class="xai-bar-row">
+                                <div class="xai-bar-info">
+                                    <span>Waist-to-Height Ratio (WtHR)</span>
+                                    <span class="xai-bar-weight">35% Impact</span>
+                                </div>
+                                <div class="xai-progress-bg">
+                                    <div class="xai-progress-fill" style="width: 35%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="xai-bar-row">
+                                <div class="xai-bar-info">
+                                    <span>BMI-for-Age Percentiles</span>
+                                    <span class="xai-bar-weight">25% Impact</span>
+                                </div>
+                                <div class="xai-progress-bg">
+                                    <div class="xai-progress-fill" style="width: 25%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="xai-bar-row">
+                                <div class="xai-bar-info">
+                                    <span>Maternal & Paternal T2D History</span>
+                                    <span class="xai-bar-weight">20% Impact</span>
+                                </div>
+                                <div class="xai-progress-bg">
+                                    <div class="xai-progress-fill" style="width: 20%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="xai-bar-row">
+                                <div class="xai-bar-info">
+                                    <span>Blood Pressure & Skin Markers</span>
+                                    <span class="xai-bar-weight">12% Impact</span>
+                                </div>
+                                <div class="xai-progress-bg">
+                                    <div class="xai-progress-fill" style="width: 12%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="xai-bar-row">
+                                <div class="xai-bar-info">
+                                    <span>Physical Activity & Screen Hours</span>
+                                    <span class="xai-bar-weight">8% Impact</span>
+                                </div>
+                                <div class="xai-progress-bg">
+                                    <div class="xai-progress-fill" style="width: 8%;"></div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

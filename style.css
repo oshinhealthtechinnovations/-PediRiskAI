@@ -78,35 +78,612 @@ body {
     padding: 0 1.5rem;
 }
 
-.section-padding { padding: 5rem 0; }
-.text-center { text-align: center; }
+/* Main Content Top Offset for Fixed Navbar */
+main {
+    padding-top: 90px;
+    min-height: calc(100vh - 300px);
+}
+
+/* Dedicated Hero Grid Layout (Text Left, Image Right) */
+.hero-card-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .hero-card-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
 
 /* Strict 3-Column Grid for PediRisk Phases (2 Rows x 3 Columns) */
 .pedirisk-cards-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 2rem !important;
-    margin-top: 2rem !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 @media (max-width: 992px) {
     .pedirisk-cards-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 640px) {
     .pedirisk-cards-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 1fr;
     }
 }
 
 /* Premium Card Architecture */
 .ui-card-feature {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2.25rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    transition: all var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ui-card-feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-blue) 0%, var(--accent-teal) 100%);
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.ui-card-feature:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-teal);
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.12);
+}
+
+/* 2x2 Executive Mini-Card Grids */
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Challenge Mini-Cards (Red Tint for Clinical Necessity) */
+.challenge-card-mini {
+    background: #FEF2F2;
+    border: 1px solid #FCA5A5;
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    transition: all var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.challenge-card-mini:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(220, 38, 38, 0.12);
+    border-color: #EF4444;
+}
+
+.challenge-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.challenge-icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #FEE2E2;
+    color: #DC2626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.challenge-tag {
+    background: #FEE2E2;
+    color: #991B1B;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.challenge-card-mini h4 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #991B1B;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-card-mini p {
+    font-size: 0.88rem;
+    color: #7F1D1D;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/* Objective Milestone Mini-Cards (Teal Tint for Research Targets) */
+.objective-card-mini {
+    background: #F0FDFA;
+    border: 1px solid #99F6E4;
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    transition: all var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.objective-card-mini:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(13, 148, 136, 0.12);
+    border-color: #14B8A6;
+}
+
+.objective-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.objective-step-pill {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 800;
+    background: #CCFBF1;
+    color: #0F766E;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.objective-status-tag {
+    background: #CCFBF1;
+    color: #0F766E;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.25rem 0.65rem;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.objective-card-mini h4 {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0F766E;
+    margin-bottom: 0.5rem;
+}
+
+.objective-card-mini p {
+    font-size: 0.88rem;
+    color: #115E59;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/* Floating Pill Tags for Hero Image Collage */
+.floating-tag-badge {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    z-index: 10;
+}
+
+.floating-tag-badge i {
+    color: var(--accent-teal);
+    font-size: 0.75rem;
+}
+
+.tag-pos-1 { top: 15px; left: -15px; }
+.tag-pos-2 { top: 75px; right: -15px; }
+.tag-pos-3 { bottom: 75px; left: -15px; }
+.tag-pos-4 { bottom: 15px; right: -15px; }
+
+/* Solution Pipeline Timeline Flow */
+.solution-timeline-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.solution-timeline-step {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+    text-align: center;
+    flex: 1;
+    min-width: 130px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    position: relative;
+    transition: all var(--transition-fast);
+}
+
+.solution-timeline-step:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-teal);
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.1);
+}
+
+.solution-timeline-step .step-icon {
+    font-size: 1.3rem;
+    color: var(--accent-teal);
+    margin-bottom: 0.4rem;
+}
+
+.solution-timeline-step .step-title {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+}
+
+.timeline-arrow {
+    color: var(--accent-teal);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 992px) {
+    .timeline-arrow { display: none; }
+    .solution-timeline-flow { gap: 1rem; }
+}
+
+/* Industries We Serve Grid */
+.industry-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .industry-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 576px) {
+    .industry-cards-grid { grid-template-columns: 1fr; }
+}
+
+.industry-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all var(--transition-fast);
+}
+
+.industry-card:hover {
+    transform: translateY(-50px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.1);
+}
+
+.industry-card i {
+    font-size: 1.8rem;
+    color: var(--accent-blue);
+    margin-bottom: 0.75rem;
+    display: inline-block;
+}
+
+.industry-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+    margin: 0;
+}
+
+/* Why Choose OSHIN Feature Cards Grid */
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 992px) {
+    .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .why-choose-grid { grid-template-columns: 1fr; }
+}
+
+.why-choose-card {
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-teal);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.1);
+}
+
+.why-choose-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #E0F2FE;
+    color: #0369A1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.why-choose-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+    margin: 0 0 0.25rem 0;
+}
+
+.why-choose-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.roadmap-light-subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #E0F2FE;
+    color: #0369A1;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.roadmap-light-title {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--accent-navy);
+    margin-bottom: 0.75rem;
+}
+
+.roadmap-light-desc {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* Light Mode Horizontal Progress Pipeline (01 to 06) */
+.light-progress-pipeline {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding-top: 1.25rem;
+    border-top: 2px dashed #E2E8F0;
+}
+
+@media (max-width: 992px) {
+    .light-progress-pipeline {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .light-progress-pipeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.pipeline-step-pill {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 50px;
+    padding: 0.5rem 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--accent-navy);
+    transition: all var(--transition-fast);
+}
+
+.pipeline-step-pill span.num {
+    background: #0EA5E9;
+    color: #FFFFFF;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 0.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pipeline-step-pill:hover {
+    background: #E0F2FE;
+    border-color: #0EA5E9;
+    transform: translateY(-2px);
+}
+
+.roadmap-dark-banner::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+.roadmap-banner-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.roadmap-banner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(14, 165, 233, 0.15);
+    border: 1px solid rgba(14, 165, 233, 0.3);
+    color: #38BDF8;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.roadmap-banner-title {
+    font-family: var(--font-heading);
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+}
+
+.roadmap-banner-desc {
+    font-size: 1.05rem;
+    color: #94A3B8;
+    line-height: 1.6;
+}
+
+/* 6-Step Horizontal Timeline Stepper Bar */
+.timeline-stepper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.75rem;
+    position: relative;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+@media (max-width: 992px) {
+    .timeline-stepper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .timeline-stepper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.stepper-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all var(--transition-smooth);
+}
+
+.stepper-num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #38BDF8;
+    color: #38BDF8;
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    transition: all var(--transition-fast);
+}
+
+.stepper-node:hover .stepper-num {
+    background: #0EA5E9;
+    color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(14, 165, 233, 0.5);
+    transform: scale(1.1);
+}
+
+.stepper-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #E2E8F0;
+}
+
+.stepper-sub {
+    font-size: 0.72rem;
+    color: #64748B;
+}
+
+/* High-Contrast Phase Cards & Roadmap Header */
+.phase-card-elevated {
     background: #FFFFFF !important;
-    border: 1px solid var(--border-color) !important;
+    border: 1px solid #E2E8F0 !important;
     border-radius: var(--radius-lg) !important;
-    padding: 2.25rem !important;
+    padding: 2rem !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.04) !important;
     transition: all var(--transition-smooth) !important;
     display: flex !important;
@@ -116,27 +693,74 @@ body {
     height: 100% !important;
 }
 
-.ui-card-feature::before {
+.phase-card-elevated::before {
     content: '' !important;
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     height: 5px !important;
-    background: linear-gradient(90deg, var(--accent-blue) 0%, var(--accent-teal) 100%) !important;
-    border-radius: var(--radius-lg) var(--radius-lg) 0 0 !important;
+    background: linear-gradient(90deg, #0EA5E9 0%, #2563EB 100%) !important;
 }
 
-.ui-card-feature:hover {
+.phase-card-elevated:hover {
     transform: translateY(-6px) !important;
-    border-color: var(--accent-teal) !important;
-    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.12) !important;
+    border-color: #0EA5E9 !important;
+    box-shadow: 0 12px 30px rgba(14, 165, 233, 0.12) !important;
 }
 
-/* Enforce Strict Resets inside Cards */
-.ui-card-feature,
-.ui-card-feature * {
-    text-decoration: none !important;
+.phase-card-elevated h3 {
+    font-family: var(--font-heading) !important;
+    font-size: 1.25rem !important;
+    font-weight: 700 !important;
+    color: #0F172A !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.6rem !important;
+}
+
+.phase-card-elevated p {
+    font-size: 0.9rem !important;
+    color: #475569 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1.25rem !important;
+    flex-grow: 1 !important;
+}
+
+.xai-bar-row {
+    margin-bottom: 1.25rem;
+}
+
+.xai-bar-row:last-child {
+    margin-bottom: 0;
+}
+
+.xai-bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-navy);
+    margin-bottom: 0.4rem;
+}
+
+.xai-bar-weight {
+    color: var(--accent-teal);
+    font-weight: 700;
+}
+
+.xai-progress-bg {
+    height: 10px;
+    background: #E2E8F0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.xai-progress-fill {
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(90deg, var(--accent-blue) 0%, var(--accent-teal) 100%);
+    transition: width 1s ease-in-out;
 }
 
 .ui-card-header-flex {
