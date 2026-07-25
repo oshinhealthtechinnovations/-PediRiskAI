@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -153,42 +153,48 @@
         </div>
     </div>
 
-    <script src="mindmap-engine.js?v=9"></script>
+    <script src="mindmap-engine.js?v=10"></script>
     <script>
         const phase4Data = {
             id: 'phase4',
             number: 4,
-            title: 'Phase IV – AI Platform Development',
-            description: 'Engineering the cloud infrastructure, multi-stakeholder user interfaces, AI integration pipeline, reporting system, and quality assurance.',
+            title: 'Phase IV : AI Platform Development',
+            description: 'System architecture, database development, web & mobile platform UI, AI model integration, reporting dashboard, and software testing.',
             subCategories: [
                 {
                     title: 'System Architecture',
                     icon: 'fa-server',
-                    description: 'Cloud infrastructure, database design, security frameworks, and microservice APIs.',
-                    items: ['Cloud Infrastructure', 'Database Design', 'Security Framework', 'APIs']
+                    description: 'Cloud infrastructure, database design, security framework, and microservice APIs.',
+                    items: ['Cloud Infrastructure', 'Security Framework', 'Microservices', 'REST APIs']
                 },
                 {
-                    title: 'User Interface',
+                    title: 'Database Development',
+                    icon: 'fa-database',
+                    description: 'Schema design, AES-256 data encryption, privacy compliance, and secure data storage.',
+                    items: ['Schema Design', 'Data Encryption (AES-256)', 'Privacy Compliance', 'Data Storage']
+                },
+                {
+                    title: 'Web & Mobile Platform',
                     icon: 'fa-desktop',
-                    description: 'Responsive user interfaces for parents, schools, doctors, and administrators.',
-                    items: ['Parent Portal', 'School Dashboard', 'Doctor Dashboard', 'Admin Dashboard', 'Mobile Application']
+                    description: 'Parent portal, school dashboard, doctor dashboard, admin dashboard, and mobile interfaces.',
+                    items: ['Parent Portal', 'School Dashboard', 'Doctor Dashboard', 'Admin Dashboard', 'Mobile Interface']
                 },
                 {
-                    title: 'AI Integration',
+                    title: 'AI Model Integration',
                     icon: 'fa-microchip',
-                    description: 'Real-time prediction pipeline, explainability modules, and confidence scoring.',
-                    items: ['Prediction Engine', 'Explainability Module', 'Recommendation Engine', 'Confidence Score']
+                    description: 'Real-time prediction engine, explainability modules, recommendation engine, and confidence scoring.',
+                    items: ['Real-Time Prediction Engine', 'Explainability Module', 'Recommendation Engine', 'Confidence Scoring']
                 },
                 {
-                    title: 'Reporting System',
+                    title: 'Reporting Dashboard',
                     icon: 'fa-file-invoice',
-                    description: 'Automated generation of individualized child, parent, doctor, and population reports.',
-                    items: ['Child Report', 'Parent Report', 'Doctor Report', 'Population Dashboard']
+                    description: 'Automated generation of child, parent summary, doctor clinical, and population reports.',
+                    items: ['Child Report', 'Parent Summary Report', 'Doctor Clinical Report', 'Population Dashboard']
                 },
                 {
-                    title: 'Quality Assurance',
+                    title: 'Software Testing',
                     icon: 'fa-shield-check',
-                    description: 'Rigorous unit, integration, security, and user acceptance testing.',
+                    description: 'Unit testing, integration testing, security testing, and user acceptance testing.',
                     items: ['Unit Testing', 'Integration Testing', 'Security Testing', 'User Acceptance Testing']
                 }
             ]

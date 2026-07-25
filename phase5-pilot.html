@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -152,43 +152,49 @@
         </div>
     </div>
 
-    <script src="mindmap-engine.js?v=9"></script>
+    <script src="mindmap-engine.js?v=10"></script>
     <script>
         const phase5Data = {
             id: 'phase5',
             number: 5,
-            title: 'Phase V – Pilot Study & Clinical Validation',
-            description: 'Real-world clinical pilot study across schools, hospitals, and clinics with full ethics approval, prospective data collection, and statistical analysis.',
+            title: 'Phase V : Pilot Study & Clinical Validation',
+            description: 'Ethics approval, school & hospital recruitment, clinical data collection, AI performance validation, statistical analysis, and model refinement.',
             subCategories: [
                 {
-                    title: 'Ethics & Regulatory Approval',
+                    title: 'Ethics Approval',
                     icon: 'fa-certificate',
-                    description: 'Obtaining ethics committee approvals, informed parental consent, school permissions, and privacy compliance.',
-                    items: ['Ethics Committee', 'Parent Consent', 'School Approval', 'Data Privacy']
+                    description: 'Obtaining ethics committee approvals, parental consent forms, and data privacy protocols.',
+                    items: ['Ethics Committee Protocol', 'Parental Consent Form', 'Data Privacy Protocol']
                 },
                 {
-                    title: 'Pilot Implementation',
+                    title: 'School & Hospital Recruitment',
                     icon: 'fa-hospital-user',
-                    description: 'Deploying prospective pilot trials across multi-center test sites.',
-                    items: ['Schools', 'Hospitals', 'Clinics', 'Community Programs']
+                    description: 'Establishing pilot partnerships across schools, hospital centers, clinics, and community programs.',
+                    items: ['School Partnerships', 'Hospital Centers', 'Clinic Collaborations', 'Community Screening']
                 },
                 {
                     title: 'Clinical Data Collection',
                     icon: 'fa-clipboard-list',
-                    description: 'Gathering digital questionnaires, anthropometric measurements, clinical examinations, and confirmatory lab tests.',
-                    items: ['Digital Questionnaire', 'Anthropometry', 'Clinical Examination', 'Laboratory Tests', 'Follow-up']
+                    description: 'Gathering digital questionnaires, anthropometrics, clinical examinations, and lab validations.',
+                    items: ['Digital Questionnaire', 'Anthropometric Measurements', 'Clinical Examination', 'Laboratory Validation']
                 },
                 {
                     title: 'AI Performance Validation',
                     icon: 'fa-chart-line',
-                    description: 'Evaluating prediction accuracy, doctor clinical agreement, false positive/negative rates, and model refinement.',
-                    items: ['Prediction Accuracy', 'Clinical Agreement', 'False Positives', 'False Negatives', 'Model Refinement']
+                    description: 'Evaluating prediction accuracy, clinical consensus agreement, and false positive/negative audits.',
+                    items: ['Prediction Accuracy', 'Clinical Consensus Agreement', 'False Positive Audits', 'False Negative Audits']
                 },
                 {
                     title: 'Statistical Analysis',
                     icon: 'fa-square-poll-vertical',
-                    description: 'Evaluating quantitative epidemiological metrics including ROC-AUC, sensitivity, specificity, PPV, and NPV.',
-                    items: ['ROC-AUC', 'Sensitivity', 'Specificity', 'PPV', 'NPV', 'Confidence Intervals']
+                    description: 'Evaluating ROC-AUC, sensitivity, specificity, PPV, NPV, and confidence intervals.',
+                    items: ['ROC-AUC Evaluation', 'Sensitivity & Specificity', 'PPV & NPV Metrics', 'Confidence Intervals']
+                },
+                {
+                    title: 'Model Refinement',
+                    icon: 'fa-sliders',
+                    description: 'Hyperparameter tuning, threshold calibration, and clinical feedback integration.',
+                    items: ['Hyperparameter Tuning', 'Threshold Calibration', 'Clinical Feedback Integration']
                 }
             ]
         };

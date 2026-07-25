@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -157,13 +157,13 @@
         </div>
     </div>
 
-    <script src="mindmap-engine.js?v=9"></script>
+    <script src="mindmap-engine.js?v=10"></script>
     <script>
         const phase1Data = {
             id: 'phase1',
             number: 1,
-            title: 'Phase I – Research Foundation',
-            description: 'Establishing the epidemiological background, clinical literature, candidate variables, and preliminary screening questionnaires.',
+            title: 'Phase I : Research Foundation',
+            description: 'Establishing problem identification, literature review, research gap analysis, candidate clinical variables, and preliminary questionnaires.',
             subCategories: [
                 {
                     title: 'Problem Identification',
@@ -175,18 +175,24 @@
                     title: 'Literature Review',
                     icon: 'fa-book-open-reader',
                     description: 'Comprehensive analysis of clinical guidelines, existing risk scores, and AI models.',
-                    items: ['International Guidelines', 'Indian Guidelines', 'Existing Questionnaires', 'Risk Scores', 'AI Prediction Models', 'Research Gaps']
+                    items: ['International Guidelines', 'Indian Guidelines', 'Existing Questionnaires', 'Risk Scores', 'AI Prediction Models']
+                },
+                {
+                    title: 'Research Gap Analysis',
+                    icon: 'fa-magnifying-glass',
+                    description: 'Identifying key clinical, pediatric, and technological gaps in current screening methodologies.',
+                    items: ['Lack of Non-Invasive Tools', 'Pediatric Specific Gaps', 'Validation Limitations', 'Clinical Adoption Barriers']
                 },
                 {
                     title: 'Candidate Clinical Variables',
                     icon: 'fa-list-check',
-                    description: 'Identifying key data points across multi-factorial health dimensions.',
-                    items: ['Demographics', 'Anthropometrics', 'Family History', 'Lifestyle', 'Clinical Indicators', 'Laboratory Variables']
+                    description: 'Identifying key candidate variables across multi-factorial health dimensions.',
+                    items: ['Demographics', 'Anthropometrics', 'Family History', 'Lifestyle', 'Clinical Indicators']
                 },
                 {
                     title: 'Preliminary Questionnaire',
                     icon: 'fa-clipboard-question',
-                    description: 'Structuring screening instruments for parents, schools, and healthcare providers.',
+                    description: 'Structuring preliminary screening instruments for parents, schools, and healthcare providers.',
                     items: ['Parent Version', 'School Version', 'Healthcare Provider Version']
                 }
             ]

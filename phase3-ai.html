@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -152,13 +152,13 @@
         </div>
     </div>
 
-    <script src="mindmap-engine.js?v=9"></script>
+    <script src="mindmap-engine.js?v=10"></script>
     <script>
         const phase3Data = {
             id: 'phase3',
             number: 3,
-            title: 'Phase III – AI Research Methodology',
-            description: 'Designing data strategy, feature engineering pipelines, machine learning algorithms, SHAP/LIME explainability, and validation frameworks.',
+            title: 'Phase III : AI Research Methodology',
+            description: 'Designing data strategy, feature engineering pipelines, candidate AI models, model evaluation, best model selection, SHAP/LIME explainable AI, and validation strategy.',
             subCategories: [
                 {
                     title: 'Data Strategy',
@@ -173,22 +173,34 @@
                     items: ['Feature Selection', 'Data Cleaning', 'Feature Transformation', 'Derived Variables']
                 },
                 {
-                    title: 'Predictive Modelling',
+                    title: 'Candidate AI Models',
                     icon: 'fa-brain',
-                    description: 'Training and evaluating state-of-the-art predictive ML algorithms.',
-                    items: ['Logistic Regression', 'Decision Tree', 'Random Forest', 'XGBoost', 'LightGBM', 'Neural Networks', 'Ensemble Models']
+                    description: 'Training and evaluating candidate machine learning architectures.',
+                    items: ['Logistic Regression', 'Decision Tree', 'Random Forest', 'XGBoost', 'LightGBM', 'Neural Network']
+                },
+                {
+                    title: 'Model Evaluation',
+                    icon: 'fa-chart-pie',
+                    description: 'Comprehensive performance evaluation across key statistical metrics.',
+                    items: ['Accuracy', 'Precision', 'Recall', 'Sensitivity', 'Specificity', 'F1 Score', 'ROC-AUC']
+                },
+                {
+                    title: 'Best Model Selection',
+                    icon: 'fa-award',
+                    description: 'Selecting optimal predictive algorithm based on clinical feasibility and accuracy.',
+                    items: ['Comparative Performance', 'Clinical Feasibility', 'Computational Efficiency', 'Final Model Selection']
                 },
                 {
                     title: 'Explainable AI',
                     icon: 'fa-magnifying-glass-chart',
                     description: 'Ensuring transparent, non-blackbox risk explanations for clinicians via SHAP & LIME.',
-                    items: ['SHAP', 'LIME', 'Feature Importance', 'Decision Explanation']
+                    items: ['SHAP Feature Attribution', 'LIME Local Explanations', 'Feature Importance', 'Decision Explanation']
                 },
                 {
-                    title: 'Validation Strategy',
+                    title: 'AI Validation Strategy',
                     icon: 'fa-vial-circle-check',
-                    description: 'Ensuring statistical robustness, cross validation, external validation, and performance metrics.',
-                    items: ['Train/Test Split', 'Cross Validation', 'External Validation', 'Calibration', 'Performance Metrics']
+                    description: 'Ensuring statistical robustness, train/test split, cross validation, and external validation.',
+                    items: ['Train/Test Split', 'Cross Validation', 'External Validation', 'Calibration Curves']
                 }
             ]
         };
